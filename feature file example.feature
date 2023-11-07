@@ -27,3 +27,20 @@ Feature: creating account in gmail
     Then select the items which you want to cancel
     When items are selected,give the reason for cancellation
     Then click proceed  order will be cancelled
+
+  Scenario: user wants to  book flight tickets
+    Given go to make my trip website
+    And login to existing account
+    When home page is displayed,type From and To location
+    And click on the search button
+    Then navigates to booking flight page
+    And click on the payment button
+    Then flight ticket is booked
+
+  Scenario: user wants to book movie ticket
+    Given go to ticket new website
+    And login to existing account
+    When navigating to home page  to select the location
+    Then select the desired movie
+    And move to the payment link
+    Then payment verification is made and ticket is booked
