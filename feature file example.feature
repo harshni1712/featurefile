@@ -1,4 +1,4 @@
-Feature: When A user wants to create account in Gmail
+Feature: When a user wants to create account in Gmail
 
   @gmail-login @Homepage
   Scenario: When the user tries to login to gmail.com and then tries to sign in
